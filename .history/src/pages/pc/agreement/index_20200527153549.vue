@@ -1,0 +1,100 @@
+<template>
+  <div class="agreement-wrapper">
+    <el-tabs tab-position="left">
+      <el-tab-pane label="用户协议">
+        <div class="title">用户协议</div>
+        <div class="content">
+          更新日期:2019年4月24日
+          生效日期:2019年5月1日
+          欢迎您使用（以下简称本服务），您在使用本服务前请认真阅读以下协议（以下简称本协议）。
+          一、用户协议的接受
+          当您在注册程序过程中在“已阅读，同意本《用户协议》”处打勾“✓”并按照注册程序成功注册为用户，或您以其他允许的方式实际使用服务时，即表示您已充分阅读、理解并接受本协议的全部内容，并与达成协议。请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款，请您重点阅读并理解加粗提示条款。如您对本协议项下任何条款有异议，请停止使用站酷服务。
+          二、本协议的变更和修改
+          有权随时对本协议进行修改，并且一旦发生协议条款的变动，将在相关页面上提示修改的内容；用户如果不同意本协议的修改，可以放弃使用或访问本网站或取消已经获得的服务；如果用户选择在本协议变更后继续访问或使用本网站，则视为用户已经接受本协议的修改。
+          运用自己的系统通过互联网向用户提供服务，除非另有明确规定，增强或强化目前服务的任何新功能，包括新产品以及新增加的服务，均无条件地适用本协议。
+          四、用户行为
+          用户需要实名认证完成账号注册，才能正常使用网站提供的服务。任何机构或个人注册和使用的互联网用户账号名称，必须符合《互联网用户账号名称管理规定》，用户必须承诺遵守法律法规、社会主义制度、国家利益、公民合法权益、公共秩序、社会道德风尚和信息真实性等七条底线。
+          1、用户账号、密码和安全
+          （1）您在注册账号时必须通过实名认证，才能成为的合法用户，得到一个密码和账号。您可以利用账户，通过本服务上传您的作品，合法正当地使用平台提供的各项服务功能。
+          （2）用户须对在）的注册信息的真实性、合法性、有效性承担全部责任，用户不得使用他人的名义发布任何信息；当被发现用户冒用他人或机构的名义恶意注册账号，有权立即停止提供服务，收回其账号并由该用户承担由此而产生的一切法律及其他责任。
+          （3）您应采取合理措施维护其密码和账号的安全。用户对利用该密码和账号所进行的一切活动负全部责任；由该等活动所导致的任何损失或损害由用户承担，不承担任何责任。
+          （4）用户的密码和账号遭到未授权的使用或发生其他任何安全问题，用户可以立即通知，并且用户在每次连线结束，应结束账号使用，否则用户可能得不到站酷（ZCOOL）公司的安全保护。
+          （5）对于用户长时间未使用的账号，站酷（ZCOOL）有权予以关闭。
+        </div>
+      </el-tab-pane>
+      <el-tab-pane label="隐私政策">隐私政策</el-tab-pane>
+    </el-tabs>
+  </div>
+</template>
+
+<script>
+export default {
+  components: {},
+  props: {},
+  data() {
+    return {};
+  },
+  watch: {},
+  computed: {},
+  methods: {},
+  created() {},
+  mounted() {}
+};
+</script>
+<style lang="scss" scoped>
+.agreement-wrapper {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 100px 150px 30px;
+  background-color: #eeeeee;
+  /deep/ .el-tabs {
+    .el-tabs__header.is-left {
+      width: 200px;
+      background-color: #fff;
+      padding: 20px 0;
+      box-sizing: border-box;
+      .el-tabs__active-bar.is-left,
+      .el-tabs__active-bar.is-right,
+      .el-tabs--right .el-tabs__active-bar.is-left,
+      .el-tabs--right .el-tabs__active-bar.is-right {
+        width: 3px;
+      }
+      .el-tabs__active-bar.is-left,
+      .el-tabs__nav-wrap.is-left::after {
+        right: auto;
+        left: 0;
+      }
+      .el-tabs__active-bar {
+        background-color: #eac385;
+      }
+      .el-tabs__item:hover {
+        color: #eac385;
+        cursor: pointer;
+      }
+      .el-tabs__item.is-active {
+        color: #eac385;
+      }
+      .el-tabs__nav-wrap::after {
+        content: none;
+      }
+      .el-tabs__item.is-left {
+        text-align: left;
+      }
+      .el-tabs__item {
+        padding-left: 30px;
+      }
+    }
+    .el-tabs__content {
+      background-color: #fff;
+    }
+  }
+  .title {
+    padding: 30px 10px;
+    font-size: 18px;
+  }
+  .content {
+    padding: 30px;
+  }
+}
+</style>

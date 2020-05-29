@@ -1,0 +1,101 @@
+@import "../../../styles/global";
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-size: 14px;
+    border: 1px solid transparent;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button {
+    background: transparent;
+}
+
+/deep/ .el-checkbox {
+    color: #666666;
+    cursor: none;
+    .el-checkbox__input {
+        cursor: none;
+    }
+    .el-checkbox__inner:hover {
+        border-color: #e5b467;
+    }
+    .el-checkbox__input.is-focus .el-checkbox__inner {
+        border-color: #e5b467;
+    }
+    .el-checkbox__input.is-checked .el-checkbox__inner,
+    .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+        color: #e5b467;
+        background-color: #e5b467;
+        border-color: #e5b467;
+    }
+    .el-checkbox__input.is-checked + .el-checkbox__label {
+        color: #666666;
+    }
+}
+.submit-wrapper {
+    width: 100%;
+    height: 45px;
+    @include center;
+    .submit {
+        height: 100%;
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: 5px;
+        background-color: #73befb;
+        &:active {
+            background-color: rgba(115, 190, 251, 0.8);
+        }
+    }
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.input-wrapper {
+    position: relative;
+    display: flex;
+    line-height: 40px;
+    background-color: #fff;
+    margin-bottom: 22px;
+    .icon {
+        margin-right: 15px;
+        color: #999999;
+    }
+    .label {
+        width: auto;
+        text-align: justify;
+        text-align-last: justify;
+        margin-right: 10px;
+        color: #333333;
+    }
+    .text-input {
+        flex: 1;
+        padding: 0 2px;
+    }
+    .getValid {
+        width: 7rem;
+        height: 40px;
+        color: #999999;
+        border: solid 1px #d5d5d5;
+        border-bottom: none;
+        @include center;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-bottom: 1px solid #d2d2d2;
+    }
+    &:nth-child(2) {
+        margin-bottom: 0;
+    }
+}

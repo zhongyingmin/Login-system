@@ -1,0 +1,47 @@
+<template>
+  <div id="app">
+    <router-view />
+  </div>
+</template>
+
+<script>
+import { _isMobile } from "@/utils/validate.js";
+export default {
+  name: "App",
+  data() {
+    return {
+      isMobile: null
+    };
+  },
+  created() {
+    let _this = this;
+    this.$nextTick(() => {
+      window.onresize = () => {
+        return (() => {
+          if (_isMobile()) {
+            console.log(_this.phone_type != "mobile");
+            if (_this.phone_type != "mobile") {
+              this.$store.commit("SET_PHONE_TYPE", "mobile");
+              _this._ifIsMobile();
+            }
+            return;
+          } else {
+            console.log(_this.phone_type != "pc");
+            if (_this.phone_type != "pc") {
+              this.$store.commit("SET_PHONE_TYPE", "pc");
+              _this._ifIsMobile();
+            }
+            return;
+          }
+        })();
+      };
+    });
+  },
+  methods: {
+    _ifIsMobile() {
+      this.$router.push("/");
+    }
+  }
+};
+</script>
+
