@@ -47,16 +47,9 @@
                   <el-col :span="14">
                     <el-checkbox v-model="loginForm.key">
                       我已阅读并接受
-                      <router-link
-                        tag="span"
-                        :to="{path:'agreement',query:{name:'user'}}"
-                        class="yellow"
-                      >用户协议</router-link>和
-                      <router-link
-                        tag="span"
-                        :to="{path:'agreement',query:{name:'policy'}}"
-                        class="yellow"
-                      >隐私政策</router-link>
+                      <router-link tag="span" :to="{path:'agreement',query:{name:'user'}}" class="yellow">用户协议</router-link>
+                      和
+                      <router-link tag="span" :to="{path:'agreement',query:{name:'policy'}}" class="yellow">隐私政策</router-link>
                     </el-checkbox>
                   </el-col>
                   <el-col :span="8" :style="{textAlign:'right'}" :offset="2">
@@ -251,7 +244,7 @@ export default {
     width: 100%;
     height: 100%;
     background: url("../../../../static/image/pc/bg.png") no-repeat;
-    background-size: auto;
+    background-size:contain;
     display: flex;
     @mixin form() {
       .el-form {
@@ -324,7 +317,7 @@ export default {
               color: #999999;
               font-size: 14px;
               text-decoration: none;
-              &:hover {
+              &:hover{
                 color: #666666;
               }
             }
